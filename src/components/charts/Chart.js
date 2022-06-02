@@ -96,13 +96,25 @@ const Chart = () => {
 				handleDeleteInputXItem={handleDeleteInputXItem}
 			/>
 			{selectedRadioBtn === "Bar Chart" ? (
-				<ChartBar chartData={data} />
+				<ChartBar
+					chartData={data}
+					options={{ maintainAspectRatio: false }}
+				/>
 			) : selectedRadioBtn === "Line Chart" ? (
-				<ChartLine chartData={data} />
+				<ChartLine
+					chartData={data}
+					options={{ maintainAspectRatio: false }}
+				/>
 			) : selectedRadioBtn === "Doughnut Chart" ? (
-				<ChartDoughnut chartData={data} />
+				<ChartDoughnut
+					chartData={data}
+					options={{ maintainAspectRatio: false }}
+				/>
 			) : (
-				<ChartPie chartData={data} />
+				<ChartPie
+					chartData={data}
+					options={{ maintainAspectRatio: false }}
+				/>
 			)}
 
 			<RadioBtnList
