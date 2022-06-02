@@ -1,0 +1,12 @@
+.radio-btn-list {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding-left: 0;
+}
+.radio-btn-list li {
+	margin-top: 10px;
+}
+.radio-btn-list label {
+	cursor: pointer;
+}
